@@ -6,10 +6,17 @@ function cylinderArea(radius, height) {
   return circleArea(radius) *2* height;
 }
 
+function squareArea(side) {
+  return side**2;
+}
+
 let radius = 10
 let height = 5
+let side = 4
+
 let cArea = circleArea(radius)
 let cyArea = cylinderArea(radius, height)
+let sArea = squareArea(side)
 
 console.log("the area of a circle of radius ", radius, " is ", cArea, " and the area of a cylinder of radius thesame radius and height ", height, " is ", cyArea)
 console.log("the area of a circle of radius ", radius, " is ", Math.ceil(cArea), " and the area of a cylinder of radius thesame radius and height ", height, " is ", Math.ceil(cyArea))
@@ -23,6 +30,7 @@ the area of a circle of radius
   and the area of a cylinder of radius thesame radius and height
   ${height} is ${Math.round(cyArea)}
 `)
+console.log("the area of a square of side ", side, " is ", sArea)
 
 // COMMENTING IN JAVASCRIPT
 //1. single line comment
